@@ -254,18 +254,22 @@ input[type=submit]:hover {
 }
 
 
+
 /*mobile*/
 
 @media (min-width: 320px) and (max-width: 480px) {
    img.logo2{
        display:none;
   }
-  img.logo{
-      
-  display: flex; justify-content: center ;
- 
+  
 
-  }
+img.logo{
+    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 
 }
 
+}
