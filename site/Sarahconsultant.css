@@ -14,6 +14,19 @@ body {
   line-height: 1.7;
 }
 
+.nav ul li:first-child a {
+ border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  
+
+}
+.nav ul li:last-child a {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+ 
+}
+
+
 h1, h2{
     font-style: normal;
     font-weight: 700;
@@ -84,8 +97,9 @@ height:80%;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+ background-image: radial-gradient(gray,black);
   display: flex; justify-content: center ;
+  
 }
 
 .topnav li {
@@ -95,6 +109,7 @@ height:80%;
 .topnav li a {
   display: inline-block;
   color: white;
+  font-size-adjust: 15px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -246,13 +261,19 @@ input[type=submit]:hover {
    img.logo2{
        display:none;
   }
-  img.logo{
-    
-  display: flex; justify-content: center ;
+/* Style the header */
 
-  }
+
+img.logo{
+     display: block;
+ 
+  margin-left: auto;
+  margin-right: auto;
+ align-content: center;
+
 }
 
+}
 
 /*mobile*/
 
@@ -260,14 +281,15 @@ input[type=submit]:hover {
    img.logo2{
        display:none;
   }
-  
+/* Style the header */
+
 
 img.logo{
-    
-  display: block;
+     display: block;
+
   margin-left: auto;
   margin-right: auto;
-  
+ align-content: center;
 
 }
 
