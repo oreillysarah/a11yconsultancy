@@ -254,7 +254,6 @@ input[type=submit]:hover {
 }
 
 
-
 /*mobile*/
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -273,3 +272,4 @@ img.logo{
 }
 
 }
+
