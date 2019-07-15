@@ -245,7 +245,7 @@ input[type=submit]:hover {
   display: none;
 }
 
-header{
+.header{
   text-align: center;
   display: inline-block
 }
