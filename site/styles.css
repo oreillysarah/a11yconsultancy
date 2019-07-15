@@ -45,28 +45,6 @@ height:80%; padding-right:288px;
 
 }
 
-/* Style the topnav links */
-/*.topnav {
-
-
-
- 
-display: flex; justify-content: center ;
-
-
-
-overflow: hidden;
-
-}
-
-.topnav a {
-  display: inline-block;
-  color: white;
-  font-size-adjust: 15px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}*/
 
 .topnav {
   overflow: hidden;
@@ -263,6 +241,14 @@ input[type=submit]:hover {
  padding-left: 0%;
   }
    
+.logo2{
+  display: none;
+}
+
+logo{
+  float: none;
+  width: 100%;
+}
 
 h2{
   font-size:120%;
