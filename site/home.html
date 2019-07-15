@@ -2,8 +2,15 @@
 <html>
     <lang=en-US>
     <head>
-<link rel="stylesheet" type="text/css" href="Sarahconsultant.css">
-<title>About | Sarah O'Reilly  Web Accessibility and Assistive Technology Consultancy '</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
+
+
+
+
+<title>Contact us | Sarah O'Reilly  Web Accessibility and Assistive Technology Consultancy '</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>  
@@ -15,20 +22,21 @@
        <h1 class="hidden"> Web Accessibility and Assistive Technology Consultancy</h1>
         <img class="logo" src="logosarah.jpg" alt="logo">
         <img class="logo2" src="logoiaapsarah.jpg" alt="logo">
-    </div>  
-<div class="topnav">
-    <div class="navlink">
-        <ul>
-            <li><a href="contact.html">Contact </a></li>
-            <li><a href="news.html">News</a> </li>
-            <li><a href="blog.html">Blog </a></li>
-            <li><a href="home.html">About </a></li>
-            <li><a href="services.html">Services </a></li>
-        </ul>
-    </div>
+    </div>     
+
+
+
+<div class="topnav" id="myTopnav">       
+            <a href="home.html" class="active">Home </a>
+            <a href="contact.html">Contact </a>
+            <a href="news.html">News</a> 
+            <a href="blog.html">Blog </a>
+            <a href="services.html">Services </a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+        
 </div>
-
-
 
 <div class="row"> 
 
@@ -40,24 +48,20 @@
         <div class="card">
             
             <h2> Sarah O'Reilly - Consultant, Msc Computing (Assistive Technology) </h2>
-            
+
             <p class="maintext">Accessibility audits of websites according to EN 301 549 (European Standard)/ WCAG2.0/WCAG 2.1/ Section 508 and working directly with developers, scrum masters, QA, program managers to make websites AA compliant. I have nearly 7 years’ experience working in web accessibility with large multinationals including IBM and UHG/ Optum. My work included working as a consultant in web accessibility with customers. 
                 I was also the accessibility focal point for an entire product in IBM (IBM Connections). <p>
-                     
-                      <hr>
-                      <br>
-I was originally an occupational therapist and have over 4 years experience working directly 
-with people with disabilities, with a special interest in Assistive technology and Web Accessibility.
-
- <br>
- My work includes working directly with developers, scrum masters, QA, program managers to make websites AA compliant.
-   <br>
-   <hr>
- 
- 
-<p>While working for IBM I also published an article (nearly achieving patent status) A System and Method for automatically reporting and motivating fixes for accessibility issues - IP.com.I am currently Studying for the IAAP cert in web a11y
-    and I am professional member of IAAP
-</p>
+             <hr>
+             <br>
+            I was originally an occupational therapist and have over 4 years experience working directly 
+            with people with disabilities, with a special interest in Assistive technology and Web Accessibility.
+            <br>
+            My work includes working directly with developers, scrum masters, QA, program managers to make websites AA compliant.
+            <br>
+            <hr>
+            <p>While working for IBM I also published an article (nearly achieving patent status) A System and Method for automatically reporting and motivating fixes for accessibility issues - IP.com.I am currently Studying for the IAAP cert in web a11y
+                and I am professional member of IAAP
+            </p>
             <p><img class="icon" src="icon.jpg" alt="linkedin icon"></img>
             <a class="linkedin" href="https://www.linkedin.com/in/sarah-o%C2%B4reilly-699a5214/"> See Linkedin Profile </a> </p>
             </div></p>
@@ -73,5 +77,6 @@ with people with disabilities, with a special interest in Assistive technology a
      
         </ul>
 </div>
+
 </body>
 </html>							
