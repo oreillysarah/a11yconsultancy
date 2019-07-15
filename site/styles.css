@@ -245,8 +245,9 @@ input[type=submit]:hover {
   display: none;
 }
 
-.logo{
-  padding-left: 10px;
+header{
+  text-align: center;
+  display: inline-block
 }
 
 h2{
