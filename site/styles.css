@@ -5,12 +5,14 @@
 
 body {
   background-image: linear-gradient(lightblue, white);
-  font-family: "Oxygen","Helvetica Neue",Helvetica,sans-serif;
+      font-family: 'lato_regular', arial;
+    color: #404040;
   margin: 0;
-  color: #666666;
+ 
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
+  letter-spacing: 0.2px;
 }
 
 
@@ -18,38 +20,81 @@ h1, h2{
     font-style: normal;
     font-weight: 700;
     letter-spacing: -1px;
-    color: #0099CC;
+    color:#00577b;
+    background-color: #f3f3f3;
 
 }
 
 h2{
   font-size: 1.35em;
+  font-weight: bold;
    
+}
+
+h3{
+  color:  #292C5F;
+  background-color: #f3f3f3;
 }
 
 h1.hidden{
   display: none;
 }
 
+
+
+/* style skip link*/
+
+
+#skipnav a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skipnav a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
+
+
 /* Style the header */
 .header {
-background-color:white;
+
 display: flex; justify-content: center ;
 box-shadow:0 0.15em 0.35em 0 rgba(0,0,0,0.135);
 padding: 10px;
+background-color:white;
+
+}
+
+img.logo2{
+
+background-size: 70%;
+ height: 80%;
 }
 
 
 img.logo{
-height: 90%;
-padding-right:15%;
+
+padding-right:10%;
+ height: auto;
+  
+
 }
+
+
 
 
 .topnav {
   overflow: hidden;
  padding: 0;
-  background-image: radial-gradient(gray,black);
+  background-image: radial-gradient(#2f2d2d,black);
   letter-spacing: 1px;
 font-size: 17px;
 color:black;
@@ -77,22 +122,65 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 
 /* Change color on hover */
- a:hover {
-  outline: 4px solid  #0099CC;;
-  border: 2px solid WhiteSmoke;  
+ .topnav a:hover {
+   background-color: #0099CC;
+  border: 2px solid #0099CC;
+text-decoration: underline;
 }
 
- a:focus{ 
-   outline: 4px solid  #0099CC;;
-  border: 2px solid WhiteSmoke;
+  .topnav a:focus{ 
+  background-color: #0099CC;
+  border: 2px solid #0099CC;
+  text-decoration: underline;
  
 }
 
-a:active{
+ .topnav a:active{
  text-decoration: underline;
 }
 
 
+
+/*input fields*/
+
+#name:focus {
+    outline: none !important;
+    border:1px solid #0000FF;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#subject:focus {
+    outline: none !important;
+    border:1px solid #0000FF;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#submit:focus {
+  background-color: #0000FF;
+  border: 2px solid #0099CC;
+  text-decoration: underline;
+}
+
+
+/*skip link*/
+#skip a
+{
+position:absolute;
+left:-60000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+background-color: white;
+height:auto;
+}
+/*main text*/
 .maintext{
   display: block;
     margin-block-start: 1em;
@@ -109,13 +197,67 @@ a:active{
 img.sarah{
   max-width: 100%;
   height: auto;
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
   vertical-align: middle;
   border: 0;
+ box-shadow: 0 0 10px #719ECE;
+}
+
+/*style the images*/
+.contact{
+  max-width: 50%;
+  
+ 
+}
+.offeralign{
+  text-align: center;
+}
+.wcag{
+  max-width: 50%;
+  box-shadow: 0 0 10px #719ECE;
  
 }
 
-.name{font-size: 14px;
+.cataracts{
+  max-width: 80%;
+  box-shadow: 0 0 10px #719ECE;
+ 
+}
 
+.mice{
+  max-width: 80%;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.keyboards{
+  max-width: 80%;
+  box-shadow: 0 0 10px #719ECE;
+}
+.skills{
+  
+  box-shadow: 0 0 10px #719ECE;
+ 
+}
+
+.blog{
+  
+  box-shadow: 0 0 10px #719ECE;
+ 
+}
+.contact{
+  
+  box-shadow: 0 0 10px #719ECE;
+ 
+}
+.news{
+  
+  box-shadow: 0 0 10px #719ECE;
+ 
+}
+.name{font-size: 14px;
+box-shadow: 0 0 10px #719ECE;
 }
 
 .linkedin{
@@ -124,6 +266,15 @@ img.sarah{
   font-size: 14px;  
 }
 
+.special{
+  color: #000080;
+}
+
+.offer{
+  max-width: 40%;
+  box-shadow: 0 0 10px #719ECE;
+  text-align: center;
+  }
 
 /* Add a card effect for articles */
 .card {
@@ -131,6 +282,46 @@ img.sarah{
 
 }
 
+/*blog list of links*/
+#bloglist{
+  font-size: 110%;
+   padding-left: 5px;
+  
+    
+}
+
+
+
+#bloglist li {
+    display: list-item;
+  
+}
+#bloglist ul{
+    list-style-type: disc;
+     display: block;
+     padding-left: 5px;
+
+
+}
+#bloglist a{
+  color: #005b9e;
+      text-decoration: underline;
+    outline: 3px solid transparent;
+}
+
+/* Change color on hover */
+ #bloglist a:hover {
+  
+  border: 2px solid #0099CC;
+text-decoration: underline;
+}
+
+  #bloglist a:focus{ 
+ 
+  border: 2px solid #0099CC;
+  text-decoration: underline;
+ 
+}
 
 /* Style the footer */
 .footer {
@@ -160,9 +351,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+
 
 
 
@@ -198,6 +387,49 @@ input[type=submit]:hover {
 
 
   
+}
+/* styling social medial*/
+
+/* Style all font awesome icons */
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    outline: none !important;
+    border:2px solid black;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.fa:focus {
+    outline: none !important;
+    border:2px solid black;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
 /* Clear floats after the columns */
@@ -245,6 +477,15 @@ input[type=submit]:hover {
   display: none;
 }
 
+img.logo{
+
+padding-right:0%;
+max-width: 100%;
+  
+
+}
+
+
 .align{
   text-align: center;
   display: inline-block
@@ -255,4 +496,18 @@ h2{
 
    
 }
+
+.blog{
+  max-width: 60%;
+}
+
+img.sarah{
+ float: none;
+
+
+
+}
+
+
+
 }
