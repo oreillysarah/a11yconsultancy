@@ -1,83 +1,110 @@
 <!DOCTYPE html>
-<html>
-    <lang=en-US>
-    <head>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="script.js"></script>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53MBY7VLL4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
+        gtag('config', 'G-53MBY7VLL4');
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 
-<title>Contact us | Sarah O'Reilly  Web Accessibility and Assistive Technology Consultancy '</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>  
+    <title>Services | Sarah O'Reilly Web Accessibility and Assistive Technology Consultancy</title>
+    <meta name="description" content="Web Accessibility Auditing and consultancy service using  WCAG2.0, WCAG 2.1, Section508 based in Ireland.">
+    <meta name="keywords" content="accessibility, ireland, sarah o'reilly, wcag2.0, wcag2.1, consultancy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
 <body>
 
-
-<body>
     <div class="header">
-       <h1 class="hidden"> Web Accessibility and Assistive Technology Consultancy</h1>
-        <img class="logo" src="logosarah.jpg" alt="logo">
-        <img class="logo2" src="logoiaapsarah.jpg" alt="logo">
-    </div>     
+        <div id="skipnav">
+            <p class="skipnav"><a href="#maincontent" name="5">Skip to Content (Press Enter)</a></p>
+        </div>
+        <h1 class="hidden"> Web Accessibility and Assistive Technology Consultancy</h1>
+        <img class="logo" src="logosarah.jpg" alt="sarahoreilly logo">
+        <img class="logo2" src="logoiaapsarah.jpg" alt="iaap logo">
+    </div>
 
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home </a>
+        <a href="contact.html">Contact </a>
+        <a href="news.html">News</a>
+        <a href="blog.html">Blog </a>
+        <a href="services.html">Services </a>
+        <a href="offer.html">Special Offer</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="javascript for mobile">
+            <i class="fa fa-bars"></i>
+        </a>
 
+    </div>
 
-<div class="topnav" id="myTopnav">       
-            <a href="home.html" class="active">Home </a>
-            <a href="contact.html">Contact </a>
-            <a href="news.html">News</a> 
-            <a href="blog.html">Blog </a>
-            <a href="services.html">Services </a>
-             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-        
-</div>
-
-    <div class="row"> 
+    <div class="row">
         <div class="column side">
         </div>
 
-        <div class="column middle">   
+        <div class="column middle">
             <div class="card">
-        <h2> Accessibility audits and advice </h2>
-        <p class="maintext"> Is your site accessible to people with disabilities? I providr
-            an evaluation of your product or service against recognised 
-            international standards such WCAG 2.0/ WCAG 2.1 and Section 508 and can help you with
-            end-to-end support when assessing, implementing and improving your product or service</p>
-            <br>
-            <hr>
-            <h3>This accessibility auditing service includes:</h3>
-            <ol>
-            <li>Accessibility Audits/ Assessment</li>
-            <li>WCAG 2.0/ WCAG 2.1</li>
-            <li>Web application testing</li>
-            <li>how to make your own products and services accessible </li>
-            </ol> 
-            <br>
-            <hr>
-            <p><em> The plan is to add new services in the future such as Website A11y training and Assistive Technology asssessment and training </em></p>
+                <div class="skiptarget">
+                    <a id="maincontent"></a>
+                </div>
+                <h2><a name="content"></a> Accessibility audits and advice </h2>
+                <img class="wcag" src="wcag.jpg" alt="wcag check">
+                <p class="maintext"> Is your site accessible to people with disabilities? I provide an evaluation of your product or service against recognised international standards such WCAG 2.0/ WCAG 2.1 and Section 508 and can help you with end-to-end support when assessing, implementing and improving your product or service</p>
+                <br>
 
-        <img class="icon" src="icon.jpg" alt="linkedin icon">
-        <a class="linkedin" href="https://www.linkedin.com/in/sarah-o%C2%B4reilly-699a5214/"> See Linkedin Profile </a> 
-        </div>
-        </div>
+                <h3 id="colour1">This accessibility auditing service includes:</h3>
+                <ol>
+                    <li>Conducting Website and Application reviews/ Assessment and how to make your own products and services accessible </li>
+                    <li>International Accessibility Guidelines WCAG 2.0/ WCAG 2.1, and European/ Irish/ UK standards</li>
+                    <li>Conducting Colour/ design reviews for Accessibility compliance. </li>
+                    <li>Conducting UI/Prototype design reviews for usability compliance.</li>
+                    <li>Work with your team to remediate your website</li>
+                </ol>
 
-        
+                <h3 id="colour2">My Skills/ Credentials are as follows</h3>
+                <img class="skills" src="skills.jpg" alt="skills">
+                <ul>
+                    <li>Worked as the Accessibility focal point for an entire product in IBM.</li>
+                    <li> Over 7 years experience working in Accessibility in large multinational companies </li>
+                    <li> Masters Degree in Assistive technology and dissertation on web accessibility </li>
+                    <li>Web Content Accessibility Guidelines (WCAG 2.0 and WCAG 2.1), WAI-ARIA, and ADA Section 508 guidelines.</li>
+                    <li>Assistive technology such as JAWS, NVDA, VoiceOver, Dragon and ZoomText.</li>
+                    <li>Strong understanding of popular web technologies such as HTML5, JavaScript, CSS3 and WAI-ARIA.</li>
+                    <li> Use of accessibility testing tools such as WAT, AXE, WAVE, CCA etc.</li>
+                </ul>
+
+                <br>
+
+                <p><em> The plan is to add new services in the future such as Website A11y training and Assistive Technology asssessment and training </em></p>
+                <a href="#5">Press enter to return to top of page</a>
+                <img class="icon" src="icon.jpg" alt="linkedin icon">
+                <a class="linkedin" href="https://www.linkedin.com/in/sarah-o%C2%B4reilly-699a5214/"> See Linkedin Profile </a>
+            </div>
+        </div>
 
         <div class="column side"></div>
     </div>
 
-      
 <div class="footer">
-   <ul>
-     
-        </ul>
-</div>
-  
+        <a href="https://www.facebook.com/sarahoreillya11y/" class="fa fa-facebook" aria-label="facebook"></a>
+
+        <a href="http://twitter.com/o_consultancy" class="fa fa-twitter" aria-label="twitter"></a>
+
+        <a href="https://www.linkedin.com/in/sarah-o%C2%B4reilly-699a5214" class="fa fa-linkedin" aria-label="linkedin"></a>
+    </div>
+
 </body>
-</html>							
+
+</html>
