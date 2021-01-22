@@ -1,82 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <lang=en-US>
-    <head>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="script.js"></script>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53MBY7VLL4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
+        gtag('config', 'G-53MBY7VLL4');
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Contact us | Sarah O'Reilly Web Accessibility and Assistive Technology Consultancy </title>
+    <meta name="description" content="Web Accessibility Auditing and consultancy service using  WCAG2.0, WCAG 2.1, Section508 based in Ireland.">
+    <meta name="keywords" content="accessibility, ireland, sarah o'reilly, wcag2.0, wcag2.1, consultancy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-<title>Contact us | Sarah O'Reilly  Web Accessibility and Assistive Technology Consultancy '</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>  
 <body>
 
-
-<body>
     <div class="header">
-       <h1 class="hidden"> Web Accessibility and Assistive Technology Consultancy</h1>
-        <img class="logo" src="logosarah.jpg" alt="logo">
-        <img class="logo2" src="logoiaapsarah.jpg" alt="logo">
-    </div>     
+        <div id="skipnav">
+            <p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p>
+        </div>
+        <h1 class="hidden"> Web Accessibility and Assistive Technology Consultancy</h1>
+             <img class="logo" src="logosarah.jpg" alt="sarahoreilly logo">
+        <img class="logo2" src="logoiaapsarah.jpg" alt="iaap logo">
+    </div>
 
-
-
-<div class="topnav" id="myTopnav">       
-            <a href="home.html" class="active">Home </a>
-            <a href="contact.html">Contact </a>
-            <a href="news.html">News</a> 
-            <a href="blog.html">Blog </a>
-            <a href="services.html">Services </a>
-             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-        
-</div>
-
-
-
-<div class="row"> 
-    <div class="column side">
-    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home </a>
+        <a href="contact.html">Contact </a>
+        <a href="news.html">News</a>
+        <a href="blog.html">Blog </a>
+        <a href="services.html">Services </a>
+        <a href="offer.html">Special Offer</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
 
     </div>
-    <div class="column middle">   
-        <div class="card">
-    <h2> Contact us </h2>
-  <div class="container">
-  <form method="post" action="form-to-email.php"><p>* field is required</p>
 
-    <label for="name">Name*</label>
-    <input type="text" id="name" name="name" >
+    <div class="row">
+        <div class="column side">
 
-    <label for="email"><b>Email*</b></label>
-    <input type="text"  name="email" required>
+        </div>
+        <div class="column middle">
+            <div class="card">
+                <div class="skiptarget">
+                    <a id="maincontent"></a>
+                </div>
+                <h2><a name="content"></a> Contact me </h2>
+                <img class="contact" src="contact.jpg" alt="contact">
+                <br>
+                <br>
+                <div class="container">
 
-    <label for="subject">Subject*</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <form method="post" action="mailto:sarahoreillya11y@gmail.com?subject=A11y" enctype="text/plain">
+                        <p> * indicates a required field</p>
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" class="required" />
 
-    <input type="submit" value="submit">
-  </form>
-</div>
-    
-    
-    
-    </div></p>
+                        <label for="subject">Message*</label>
+                        <textarea id="subject" name="message" style="height:200px" class="required"></textarea>
+
+                        <input id="submit" type="submit" value="Send Email" />
+                    </form>
+                    <p class="special"> Or email sarahoreillya11y@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="column side"></div>
     </div>
-    <div class="column side"></div>
-</div>
 
-  
-<div class="footer">
-   <ul>
-     
-        </ul>
-</div>
-  
+    <div class="footer">
+        <a href="https://www.facebook.com/sarahoreillya11y/" class="fa fa-facebook" aria-label="facebook"></a>
+
+        <a href="http://twitter.com/o_consultancy" class="fa fa-twitter" aria-label="twitter"></a>
+
+        <a href="https://www.linkedin.com/in/sarah-o%C2%B4reilly-699a5214" class="fa fa-linkedin" aria-label="linkedin"></a>
+    </div>
+
 </body>
-</html>							
+
+</html>
