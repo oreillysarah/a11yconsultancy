@@ -1,74 +1,195 @@
 <!DOCTYPE html>
-<html>
-    <lang=en-US>
-    <head>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="script.js"></script>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53MBY7VLL4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
+        gtag('config', 'G-53MBY7VLL4');
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Blog | Sarah O'Reilly Web Accessibility and Assistive Technology Consultancy </title>
+    <meta name="description" content="Web Accessibility Auditing and consultancy service using  WCAG2.0, WCAG 2.1, Section508 based in Ireland.">
+    <meta name="keywords" content="accessibility, ireland, sarah o'reilly, wcag2.0, wcag2.1, consultancy">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-<title>Contact us | Sarah O'Reilly  Web Accessibility and Assistive Technology Consultancy '</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>  
 <body>
 
-
-<body>
     <div class="header">
-       <h1 class="hidden"> Web Accessibility and Assistive Technology Consultancy</h1>
-        <img class="logo" src="logosarah.jpg" alt="logo">
-        <img class="logo2" src="logoiaapsarah.jpg" alt="logo">
-    </div>     
+        <div id="skipnav">
+            <p class="skipnav"><a href="#maincontent" name="5">Skip to Content (Press Enter)</a></p>
+        </div>
+        <h1 class="hidden"> Web Accessibility and Assistive Technology Consultancy</h1>
+            <img class="logo" src="logosarah.jpg" alt="sarahoreilly logo">
+        <img class="logo2" src="logoiaapsarah.jpg" alt="iaap logo">
+    </div>
 
-
-
-<div class="topnav" id="myTopnav">       
-            <a href="home.html" class="active">Home </a>
-            <a href="contact.html">Contact </a>
-            <a href="news.html">News</a> 
-            <a href="blog.html">Blog </a>
-            <a href="services.html">Services </a>
-             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-        
-</div>
-
-<div class="row"> 
-    <div class="column side">
-    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home </a>
+        <a href="contact.html">Contact </a>
+        <a href="news.html">News</a>
+        <a href="blog.html">Blog </a>
+        <a href="services.html">Services </a>
+        <a href="offer.html">Special Offer</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
 
     </div>
-    <div class="column middle">   
-        <div class="card">
-             
-    <h2> Blog </h2>
-  <h3> When to use aria labels - coding tips for accessibility </h3>
-    <p class="maintext">It is better to use native html!! E.g. <xmp>input type="radio"</xmp>.. As this automatically focuses element.
-You can use aria for legacy code for custom controls, JS menus, certain JS events.  
-There are times when the<xmp> <label></xmp> element falls short—it cannot be used to provide multiple labels for a single form control, or to associate a single label with multiple form controls. 
-There are also times when there is not a visible text label to be associated to a form control (although there should always be visible text where possible!). 
-The majority of these labeling limitations can be overcome with three ARIA properties (aria-labelledby, aria-describedby, and aria-label).
-.<p><a href="https://webaim.org/techniques/forms/advanced"> Please see WebAim article on labels </a>
-    <p><img class="icon" src="icon.jpg" alt="linkedin icon"></img>
-    <a class="linkedin" href="https://www.linkedin.com/in/sarah-o%C2%B4reilly-699a5214/"> See Linkedin Profile </a> </p>
-    </div></p>
+
+    <div class="row">
+        <div class="column side">
+
+        </div>
+        <div class="column middle">
+            <div class="card">
+                <div class="skiptarget">
+                    <a id="maincontent"></a>
+                </div>
+                <h2><a name="content"></a> Blog </h2>
+                <img class="blog" src="blog.jpg" alt="blog">
+                <ul id="bloglist">
+                    <li><a href="#7">Immediate Steps Your Organization Can Take to Prevent an Accessibility Lawsuit or Complaint</a></li>
+                    <li><a href="#6"> Colour contast and low vision</a></li>
+                    <li><a href="#1">Keyboard accessibility, why is it important?</a></li>
+                    <li><a href="#2">Coding tips and techniques for accessible headings</a></li>
+                    <li><a href="#3">Tips for focus indicators for developers and designers</a></li>
+                    <li><a href="#4">When to use aria labels - coding tips for accessibility</a></li>
+                </ul>
+
+                <h3><a name="7"></a> Immediate Steps Your Organization Can Take to Prevent an Accessibility Lawsuit</h3>
+<p>
+                <ol>
+                <li>Provide an accessibility statement on your website – The best method to prevent legal action against being inaccessible is having an accessibility statement that outlines your organization’s ongoing commitment to accessibility.</li>
+                <li>Audit your website – Most accessibility projects begin and end with an audit. They assess the current state of your site or application’s accessibility.</li>
+                <li>Start simple with free, open-source automated testing tools, such as axe. Such tools can catch between 30-50% of accessibility issues. Axe is also available as a browser extension for Chrome and Firefox, and there are axe tools for testing Android applications and iOS (coming soon) Source (*https://www.deque.com/blog/eu-web-accessibility-compliance-and-legislation/).</li></ol></p>
+
+                
+
+                        <h3><a name="6"></a> Colour contast and low vision </h3>
+                        <p>
+                            WHO: During the last ten years, cataract (47.9%) remains the leading cause of visual impairment in all areas of the world (except for developed countries). The image below shows how a person with cataracts might see an image on a website. This is why having good colour contrast on your website is essential for website accessibility. People with cataracts or low vision may not be able to use your site and the company will lose out on having them as a customer. WCAG has a specific Web accessibility guideline that deals with colour contrast:
+                        </p>
+
+                        <h4>WCAG 1.4.3 Contrast (Minimum)Level AA</h4>
+
+                        <p>The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: </p>
+
+                        <ul>
+                            <li>Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;</li>
+
+                            <li>Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</li>
+                            <li>Logotypes: Text that is part of a logo or brand name has no contrast requirement.</li>
+                        </ul>
+                        <p> Please see the <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=143#qr-visual-audio-contrast-contrast">WCAG link </a> for more info on techniques on how to fix colour contrast issues on your site </p>
+                        <img class="cataracts" src="cataracts.png" alt="cataracts">
+                        <br>
+
+                        <h3><a name="1"></a> Keyboard accessibility, why is it important? </h3>
+                        <p>
+                            Not everyone uses a standard mouse to interact with a website. Some don’t use a mouse at all! Physical conditions such as cerebral palsy or arthritis (and other physical conditions), can mean that using a standard mouse to operate a computer is impossible. Sometimes an adapted mouse or keyboard is used. This is why keyboard accessibility is very important to consider when designing a website, and why this is a WCAG standard.
+                        </p>
+                        <p>
+                            <em> WCAG 2.0 Checkpoint 2.1.1 .Keyboard: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. (Level A)</em></p>
+
+                        <p> The image below shows some examples of an adapted computer mouse and some other examples of clicking devices a person might use</p>
+                        <br>
+                        <img class="mice" src="mice.png" alt="mice">
+                        <br>
+                        <p> The image below shows some examples of adapted keyboards</p>
+                        <img class="keyboards" src="keyboards.png" alt="keyboards">
+
+                        <h3><a name="2"></a>  Coding tips and techniques for accessible headings </h3>
+                        <p>
+                            To be available to assistive technology, headers must use the following techniques:</p>
+                        <img class="heading" src="headings.jpeg" alt="headings">
+                        <ul>
+                            <li> Ensure each page has a h1 tag and ensure that it is the first item on the page. Furthermore the h1 should have the same name as the page title. </li>
+                            <li>Other heading tags used should be in logical order with no levels missing. Nest headings according to their importance e.g. a h2 should not be followed by h5.</li>
+                            <li> Headings should be based on the information featured. For example the headings should be the equivalent of a “table of contents” of the key information on a the webpage.</li>
+                        </ul>
+
+                        <h4>Coding techniques for headings</h4>
+                        <ul>
+                            <li> Only use headers for main content structure </li>
+                            <li>Do not use text formatting, such as font size or bold to give the visual appearance of headings. For example use</li></ul>
+                            
+                    <pre>
+                     <code>&lt;h1&gt;, &lt;h2&gt;, &lt;h2 class=”beta”&gt;&lt;h2&gt;</code>
+                     </pre> 
+                    <p>and not</p> 
+                    <pre>
+                     <code>&lt;b&gt;, &lt;font&gt;, &lt;span class=”beta”&gt;</code>
+                    </pre>
+  
+<h4>Code example for headings:</h4>
+<pre><code>
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;title&gt;Cooking techniques&lt;/title&gt;
+&lt;/head&gt;
+&lt;body>
+    &lt;h1>Cooking techniques&lt;/h1&gt; ... some text here ...
+        &lt;h2>Cooking with oil&lt;/h2&gt; ... text of the section ...
+            &lt;h3>Sautéeing&lt;/h3&gt; ...
+            &lt;h3>Deep frying&lt;/h3&gt;
+        &lt;h2>Cooking with butter&lt;/h2&gt; ... text of the section ...
+&lt;/body&gt;
+&lt;/html&gt;
+      </code>
+</pre>
+
+<h3><a name="3"></a>Tips for focus indicators for developers and designers</h3>
+<img class="focusindicator" src="focusindicator.jpg" alt="focusindicator">
+<p>The following WCAG2.0 standards are related to keyboard focus visibility and may overlap:
+    <ul>
+        <li>Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: large text, Logotypes and images of text that are part of an inactive user interface component that are pure decoration (WCAG SC 1.4.3).</li>
+        <li>Keyboard Trap - If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away. (WCAG SC 2.1.2)</li>
+        <li>Keyboard Operation – Verify that functionality of the page can be accessed using the tab key and all major features can be completed using only the keyboard. (WCAG SC 1.322)</li>
+        <li>Focus Order – Verify keyboard navigation tab sequence is "visually logical" moving from upper left, proceeding right then wrapping left and down (like reading a book) depending on the elements on the page's rows and column layout. (WCAG SC 2.4.3)</li>
+    </ul>
+    <a href="https://webaim.org/techniques/keyboard/"> Link to webaim and more information on focus indicators</a>
+
+<h3><a name="4"></a>  When to use aria labels - coding tips for accessibility </h3>
+<img class="arialabels" src="arialabel.jpg" alt="aria labels">
+<p class="maintext">It is better to use native html!! E.g.</p>
+    <pre>input type="radio"</pre>
+    <p>.. As this automatically focuses element. You can use aria for legacy code for custom controls, JS menus, certain JS events. There are times when the</p>
+    <pre><code>&lt;label&gt;</code></pre>
+    <p> element falls short—it cannot be used to provide multiple labels for a single form control, or to associate a single label with multiple form controls. There are also times when there is not a visible text label to be associated to a form control (although there should always be visible text where possible!). The majority of these labeling limitations can be overcome with three ARIA properties (aria-labelledby, aria-describedby, and aria-label).</p>
+    <a href="https://webaim.org/techniques/forms/advanced"> Please see WebAim article on labels </a>
+    <br>
+    <a href="#5">Press enter to return to top of page</a>
+    <p><img class="icon" src="icon.jpg" alt="linkedin icon">
+        <a class="linkedin" href="https://www.linkedin.com/in/sarah-o%C2%B4reilly-699a5214/"> See Linkedin Profile </a> </p>
+
     </div>
-    <div class="column side"></div>
+
+</div>
+<div class="column side"></div>
 </div>
 
-
-  
-
-  
 <div class="footer">
-   <ul>
-     
-        </ul>
-</div>
+        <a href="https://www.facebook.com/sarahoreillya11y/" class="fa fa-facebook" aria-label="facebook"></a>
+
+        <a href="http://twitter.com/o_consultancy" class="fa fa-twitter" aria-label="twitter"></a>
+
+        <a href="https://www.linkedin.com/in/sarah-o%C2%B4reilly-699a5214" class="fa fa-linkedin" aria-label="linkedin"></a>
+    </div>
+
 </body>
-</html>							
+
+</html>
